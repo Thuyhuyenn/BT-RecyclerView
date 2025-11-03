@@ -18,7 +18,7 @@
         android:padding="16dp"
         android:gravity="center_vertical">
 
-        <!-- Avatar Section với màu pastel -->
+        <!-- Avatar Section -->
         <RelativeLayout
             android:layout_width="64dp"
             android:layout_height="64dp">
@@ -41,13 +41,14 @@
                 android:textStyle="bold"
                 android:textColor="#FFFFFF"/>
 
-            <!-- Online indicator dot -->
+            <!-- Status indicator dot -->
             <View
+                android:id="@+id/status_indicator"
                 android:layout_width="14dp"
                 android:layout_height="14dp"
                 android:layout_alignParentEnd="true"
                 android:layout_alignParentBottom="true"
-                android:background="@drawable/online_indicator"
+                android:background="@drawable/status_online"
                 android:layout_marginEnd="2dp"
                 android:layout_marginBottom="2dp"/>
         </RelativeLayout>
@@ -60,17 +61,33 @@
             android:layout_marginStart="16dp"
             android:orientation="vertical">
 
-            <!-- Name -->
-            <TextView
-                android:id="@+id/text_name"
-                android:layout_width="wrap_content"
+            <!-- Name with Favorite Button -->
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Name"
-                android:textSize="18sp"
-                android:textStyle="bold"
-                android:textColor="#1E293B"
-                android:maxLines="1"
-                android:ellipsize="end"/>
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/text_name"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Name"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="#1E293B"
+                    android:maxLines="1"
+                    android:ellipsize="end"/>
+
+                <ImageButton
+                    android:id="@+id/btn_favorite"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:src="@drawable/ic_star_outline"
+                    android:contentDescription="Favorite"/>
+            </LinearLayout>
 
             <!-- Description -->
             <TextView
