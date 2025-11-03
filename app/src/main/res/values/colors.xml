@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Background Colors -->
+    <color name="background_main">#F5F7FA</color>
+    <color name="background_card">#FFFFFF</color>
+
+    <!-- Text Colors -->
+    <color name="text_primary">#1E293B</color>
+    <color name="text_secondary">#64748B</color>
+    <color name="text_white">#FFFFFF</color>
+
+    <!-- Accent Colors -->
+    <color name="accent_blue">#3B82F6</color>
+    <color name="accent_green">#10B981</color>
+    <color name="accent_green_light">#D1FAE5</color>
+    <color name="accent_green_dark">#0F766E</color>
+
+    <!-- Border Colors -->
+    <color name="border_light">#E2E8F0</color>
+    <color name="border_gray">#CBD5E1</color>
+</resources>
